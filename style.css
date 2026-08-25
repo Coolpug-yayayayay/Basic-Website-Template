@@ -10,3 +10,12 @@ body {
   color: rgb(0, 79, 21);
   font-size: 40px;
 }
+#bio {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.highlight {
+  font-style: italic;
+  color: green;
+}
