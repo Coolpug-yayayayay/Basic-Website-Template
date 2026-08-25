@@ -3,3 +3,5 @@ body {
   background-color: lab(45.17% -37.32 9.47);
   font-family: Georgia, serif;
 }
+
+.subtitle { color: rgb(0, 77, 62); }
