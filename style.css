@@ -4,8 +4,13 @@ body {
   font-family: Georgia, serif;
 }
 
-.subtitle { color: rgb(0, 77, 62); }
-
+{.subtitle { color: rgb(0, 77, 62); }
+border: 2px solid black;
+  padding: 20px;d
+   margin: 40px;
+   width: 600px;
+text-align: center;
+}
 #page-title { font-size: 48px; color: rgb(0, 128, 32); }
 #my-name {
   color: rgb(0, 79, 21);
@@ -19,10 +24,4 @@ body {
 .highlight {
   font-style: italic;
   color: green;
-}
-
-selector {
- border: 2px solid black;
-  padding: 20px;d
-   margin: 40px;
 }
