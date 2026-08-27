@@ -2,15 +2,35 @@ body {
   color: #2B2620;
   background-color: lab(45.17% -37.32 9.47);
   font-family: Georgia, serif;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-{.subtitle { color: rgb(0, 77, 62); }
-border: 2px solid black;
-  padding: 20px;d
-   margin: 40px;
-   width: 600px;
-text-align: center;
+.subtitle { color: rgb(0, 77, 62); }
+
+.favorites-list {
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
+
+#about-box {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.favorites-list {
+  margin-bottom: 40px;
+}
+ 
+#my-table {
+  margin-bottom: 40px;
+}
+
+
 #page-title { font-size: 48px; color: rgb(0, 128, 32); }
 #my-name {
   color: rgb(0, 79, 21);
@@ -25,3 +45,24 @@ text-align: center;
   font-style: italic;
   color: green;
 }
+#profile-image {
+  padding: 15px;
+}
+ 
+#my-table {
+  padding: 10px;
+  border: 2px solid #8A6D3B;
+  margin-bottom: 40px;
+}
+
+/* Option A - center the box itself */
+#photo-caption {
+  width: 400px;
+  margin: 0 auto;
+}
+ 
+/* Option B - center the text inside the box */
+#page-heading {
+  text-align: center;
+}
+
