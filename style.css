@@ -96,5 +96,10 @@ body {
 
 #top-banner {
   text-align: center;
+   width: 500px;
+}
+
+.fun-fact {
+  border: 2px solid navy;
 }
 
