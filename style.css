@@ -65,4 +65,33 @@ body {
 #page-heading {
   text-align: center;
 }
+#bio {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.highlight {
+  font-style: italic;
+  color: green;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+#featured {
+  background-color: orange;
+  padding: 10px;
+}
+.card {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+.card-title {
+  color: darkblue;
+  font-size: 24px;
+}
+
 
