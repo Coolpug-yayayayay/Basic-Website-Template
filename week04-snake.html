@@ -5,30 +5,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Snake</h1>
+   <h1 class="page-title">Snake</h1>
   <p><a href="index.html">Back to home</a></p>
   <canvas id="gameCanvas" width="400" height="400"></canvas>
- 
-  <script>
+<script>
     var canvas = document.getElementById("gameCanvas");
     var ctx = canvas.getContext("2d");
     var CELL = 20;
- 
     var snake = { x: 5, y: 5 };
- 
-    ctx.fillStyle = "white";
+  
+  function drawBoard() {
+    ctx.fillStyle = "#EDEBEB";
     ctx.fillRect(0, 0, 400, 400);
- 
-    ctx.fillStyle = "green";
-    ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
+    ctx.fillStyle = "#05A105";
+    ctx.fillRect(snake.x, snake.y, 20, 20);}
 
-     var apple = { x: 12, y: 8 };
+  setInterval(step, 100);
+  function step() {
+  snake.x = snake.x + 20;
  
-    ctx.fillStyle = "red";
-    ctx.fillRect(apple.x * CELL, apple.y * CELL, CELL, CELL);
+  if (snake.x > 380) {
+    snake.x = 0; }
+ 
+  drawBoard();}
 
   </script>
 </body>
 </html>
-
-
