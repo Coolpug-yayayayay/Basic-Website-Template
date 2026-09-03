@@ -13,7 +13,8 @@
     var ctx = canvas.getContext("2d");
     var CELL = 20;
     var snake = { x: 5, y: 5 };
-  
+  var dx = 20; // how far snake.x changes each step
+var dy = 0;  // how far snake.y changes each step
   function drawBoard() {
     ctx.fillStyle = "#EDEBEB";
     ctx.fillRect(0, 0, 400, 400);
@@ -21,13 +22,47 @@
     ctx.fillRect(snake.x, snake.y, 20, 20);}
 
   setInterval(step, 100);
-  function step() {
-  snake.x = snake.x + 20;
+  
+ function step() {
+  snake.x = snake.x + dx;
+  snake.y = snake.y + dy;
+  drawBoard();
+}
+  
+document.addEventListener("keydown", function(event) {
+  if (event.key === "ArrowRight") {
+    dx = 20;
+    dy = 0;
+  }
+  if (event.key === "ArrowLeft") {
+    dx = -20;
+    dy = 0;
+  } 
+  if (event.key === "ArrowUp") {
+    dx = 0;
+    dy = -20;
+  }
+  if (event.key === "ArrowDown") {
+    dx = 0;
+    dy = 20;
+  }
+
+});
+    
+function step() {
+  snake.x = snake.x + dx;
+  snake.y = snake.y + dy;
  
-  if (snake.x > 380) {
-    snake.x = 0; }
+  if (snake.x > 380) { snake.x = 0; }
+  if (snake.x < 0) { snake.x = 380; }
+  if (snake.y > 380) { snake.y = 0; }
+  if (snake.y < 0) { snake.y = 380; }
  
-  drawBoard();}
+  drawBoard();
+}
+
+
+
 
   </script>
 </body>
